@@ -1,9 +1,19 @@
 # WDI-Project2: eshop-MEHNstack
 
 ## User Stories
-- [x] As a user I want to access the Jeopardy web game so that I can play a match of jeopardy
-- [] As a user I want to assign myself or be assigned as a player so that I can play and win against someone.
-- [x] As a user I want to see the jeopardy board so that I can select a question.
+- [] As a shop owner I want to select a site location and be taken to the shopping pages for that site
+
+- [] As a shop owner I want to add new items that I am selling to a shopping page
+
+- [] As a shop owner I want to be able to view the item's page when I select an item
+
+- [] As a shop owner I want to add new items that I am selling to a shopping page
+
+- [] As a shop owner I want to delete an items from a shopping page
+
+- [] As a shop owner I want to add edit any item on a shopping page
+
+
 
 ## Technologies Used
 
