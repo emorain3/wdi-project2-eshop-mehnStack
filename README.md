@@ -18,7 +18,7 @@
 ## Technologies Used
 
 #### Planning: Figma, lucidchart
-#### Project Management: [Trello] (https://trello.com/b/4ZWx1n24/eshop-wdi-project2-mehn-development)
+#### Project Management: [Trello](https://trello.com/b/4ZWx1n24/eshop-wdi-project2-mehn-development)
 
 ## Resources
 
