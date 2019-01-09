@@ -1,7 +1,7 @@
 const Item = require('../models/Item');
-const mongoose = require("../db/connection");
 
-const itemcontroller = {
+
+const itemController = {
     index: (req, res) => {
         Item.find({}).then(items => {
             res.render('shop/main', items);
@@ -10,4 +10,4 @@ const itemcontroller = {
     }
 }
 
-module.exports = itemcontroller;
+module.exports = itemController
