@@ -1,0 +1,37 @@
+<main>
+  
+
+<form action="http://localhost:3000/" method="post">
+  <div>
+    <label for="say">Recipe Title: </label>
+    <input name="title" id="r_title" value="Hi">
+  </div>
+  <div>
+    <label for="to">Recipe Image? </label>
+    <input name="image" id="r_image" value="Mom">
+  </div>
+  <div>
+    <button>Submit </button>
+  </div>
+</form>
+
+
+    {{#each Item}}
+        
+
+        <div class="tile is-parent">
+            <article class="tile is-child notification is-info">
+                <p class="title">  {{name}}  </p>
+                <p class="subtitle">  {{description}}  </p>
+                <figure class="image is-4by3">
+                    <img src={{image_url}}>
+                </figure>
+                <p class="subtitle">  {{price}}  </p>
+            </article>
+        </div>
+
+
+        
+    {{/each}}
+
+</main>
