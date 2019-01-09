@@ -4,7 +4,9 @@
   "description": "## User Stories - [] As a shop owner I want to select a site location and be taken to the shopping pages for that site",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2"
   },
   "devDependencies": {},
   "scripts": {
