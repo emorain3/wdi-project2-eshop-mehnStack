@@ -9,10 +9,11 @@ const reviewController = require('../controllers/reviewController')
 router.get('/', itemController.index);
 router.post('/', itemController.create);
 
-
+//  EDIT PAGE
 router.get('/:id', itemController.edit);
 router.post('/:id', itemController.update);
 router.delete('/:id', itemController.delete);
 
-
+// COMMENT/ ITEM SHOW PAGE
+router. get('/item/:id', reviewController.show)
 module.exports = router

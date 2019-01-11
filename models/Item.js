@@ -8,6 +8,10 @@ const Item = new Schema({
     image_url: String, 
     category: String, // Want to make into an enum
     price: Number, 
+    reviews: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Review'
+    }]
 })
 
 

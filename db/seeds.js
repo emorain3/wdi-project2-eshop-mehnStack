@@ -1,4 +1,15 @@
 const Item = require('../models/Item');
+const Review = require('../models/Review');
+
+const review1 = new Review({
+    author: "Justin Beezy",
+    message: "They make my face feel like a marshmallow"
+})
+
+const review2 = new Review({
+    author: "Kenya",
+    message: "This pillow belongs in the trash."
+})
 
 
 let initialHomeItems = [
@@ -8,6 +19,7 @@ let initialHomeItems = [
         image_url: "https://image.dhgate.com/0x0/f2/albu/g2/M00/EB/57/rBVaGloeuZGAR5ZJAABAvrBKisw315.jpg",
         category: "home_accessories",
         price: 25,
+        reviews: [review1, review2]
     },
     {
         name: "Orange You Special",
@@ -39,3 +51,18 @@ Item.deleteMany().then(() => {
         console.log("The following items have been saved: ", items);
     })
 })
+
+// let initialComments = [  
+//     {
+//         author: "Jirvin",
+//         message: "He's a good substitute for my father not being in my life."
+//     }    
+// ]
+
+// Review.deleteMany().then(() => {
+//     return Item.deleteMany()
+// }).then(() => {
+//     Review.create(initialComments).then(items => {
+//         console.log("The following items have been saved: ", items);
+//     })
+// })
