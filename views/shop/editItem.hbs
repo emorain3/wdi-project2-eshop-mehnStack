@@ -1,9 +1,9 @@
 <main>
   
 
-    <div class="create-container">
+    <div class="edit-container">
 
-        <form action="/" method="post">
+        <form action="/{{item._id}}" method="POST">
         <div>
             <label for="name">Name: </label>
             <input name="name" id="i_name" placeholder="What is the name of this item?">
@@ -27,43 +27,34 @@
             <input name="price" id="i_image" placeholder="$$$">
         </div>
         <div>
-            <button>Submit </button>
+            <button> Submit </button>
+        </div>
+        </form>
+        
+        
+        <form action="/{{item._id}}?_method=DELETE" method="POST">
+        
+        <div>
+            <button style="width: 7vw; font-size: 1rem; background-color:red;"> Delete Permanently? </button>
         </div>
         </form>
 
 
     </div>
 
-    <div class="items_container" >
-
-        {{#each items}}
-            
-
-            <div class="tile is-parent image_outer_container" style="width:350px;" >
+    <div class="edit_container" >
+            <div class="tile is-parent" style="width:350px;" >
                 <article class="tile is-child notification is-success">
-                    <p class="title">  {{name}}  </p>
-                    <p class="subtitle">  {{description}}  </p>
+                    <p class="title">  {{item.name}}  </p>
+                    <p class="subtitle">  {{item.description}}  </p>
                     <figure class="image_inner_container" class="image is-4by3">
-                        <img class="shop_grid_images"  src={{image_url}}>
+                        <img class="shop_grid_images"  src={{item.image_url}}>
                     </figure>
-                    <p class="subtitle"> ${{price}}  </p>
-
-                    
-                    <div class="edit_container">
-
-                        <a href="/{{_id}}">
-                            <i class="fas fa-edit fa-3x"></i>
-                        </a>
-                        <a href="/{{_id}}">
-                            <i class="fas fa-trash-alt fa-3x"></i>
-                        </a>
-                    </div>
+                    <p class="subtitle"> ${{item.price}}  </p>
+                    <a href="/{{item._id}}">
+                        <i class="fas fa-edit fa-3x"></i>
+                    </a>
                 </article>
             </div>
-
-        {{/each}}
-
-        
     </div>
-
 </main>

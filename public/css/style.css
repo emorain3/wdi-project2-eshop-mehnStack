@@ -1,0 +1,33 @@
+
+main {
+    display:flex; 
+}
+
+.create-container {
+    border: solid pink;
+    min-width: 20vw; 
+    margin-left: 1vw; 
+    margin-right: 2vw;
+    
+}
+
+.items_container {
+    display:flex; 
+    min-width: 70vw; 
+    flex-wrap: wrap; 
+}
+
+.image_inner_container {
+    width:300px; 
+    height:350px; 
+    padding:0; 
+    margin:0;
+}
+.shop_grid_images {
+    width:300px; height:300px;
+}
+
+.edit_container {
+    display: flex;
+    justify-content: space-between;
+}
