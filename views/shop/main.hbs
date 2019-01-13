@@ -1,33 +1,33 @@
 <main>
   
 
-    <div class="create-container">
+    <div class="create_container">
 
         <form action="/" method="post">
-        <div>
-            <label for="name">Name: </label>
-            <input name="name" id="i_name" placeholder="What is the name of this item?">
+        <div class="field">
+            <label class="label" for="name">Name: </label>
+            <input class="input" name="name" id="i_name" placeholder="What is the name of this item?">
         </div>
-        <div>
-            <label for="description">Item Description: </label>
-            <input name="description" id="i_name" placeholder="describe this item...">
+        <div class="field">
+            <label class="label" for="description">Item Description: </label>
+            <input class="input" name="description" id="i_name" placeholder="describe this item...">
         </div>
-        <div>
-            <label for="image_url"> Image URL:  </label>
-            <input name="image_url" id="i_image" placeholder="What is the name of this item?">
-        </div>
-        
-        <div>
-            <label for="category"> Category  </label>
-            <input name="category" id="i_image" placeholder="Select a category...">
+        <div class="field">
+            <label class="label" for="image_url"> Image URL:  </label>
+            <input class="input" name="image_url" id="i_image" placeholder="What is the name of this item?">
         </div>
         
-        <div>
-            <label for="price"> Price  </label>
-            <input name="price" id="i_image" placeholder="$$$">
+        <div class="field">
+            <label class="label" for="category"> Category  </label>
+            <input class="input" name="category" id="i_image" placeholder="Select a category...">
         </div>
-        <div>
-            <button>Submit </button>
+        
+        <div class="field">
+            <label class="label" for="price"> Price  </label>
+            <input class="input" name="price" id="i_image" placeholder="$$$">
+        </div>
+        <div class="field">
+            <button class="button is-link">Submit </button>
         </div>
         </form>
 
@@ -51,7 +51,7 @@
                     <p class="subtitle"> ${{price}}  </p>
 
                     
-                    <div class="edit_container">
+                    <div class="edit_button_container">
 
                         <a href="/{{_id}}">
                             <i class="fas fa-edit fa-3x"></i>

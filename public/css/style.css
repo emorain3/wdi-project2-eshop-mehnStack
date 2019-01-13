@@ -3,18 +3,22 @@ main {
     display:flex; 
 }
 
-.create-container {
-    border: solid pink;
+.create_container {
     min-width: 20vw; 
-    margin-left: 1vw; 
-    margin-right: 2vw;
+    
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding-top: 5vh;
     
 }
 
 .items_container {
+    border-left: solid saddlebrown;
     display:flex; 
-    min-width: 70vw; 
     flex-wrap: wrap; 
+
+    min-width: 70vw; 
+    padding-left: 4vw;
 }
 
 .image_inner_container {
@@ -23,11 +27,23 @@ main {
     padding:0; 
     margin:0;
 }
+
 .shop_grid_images {
     width:300px; height:300px;
 }
 
-.edit_container {
+.edit_button_container {
     display: flex;
     justify-content: space-between;
+}
+
+/********************/
+/****  EDIT PAGE  ***/
+/********************/
+.edit_container {
+    /* border: solid saddlebrown; */
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding-top: 5vh;
+    
 }

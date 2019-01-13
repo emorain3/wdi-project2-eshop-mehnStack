@@ -1,33 +1,33 @@
 <main>
   
 
-    <div class="edit-container">
+    <div class="edit_container">
 
         <form action="/{{item._id}}" method="POST">
-        <div>
-            <label for="name">Name: </label>
-            <input name="name" id="i_name" placeholder="What is the name of this item?">
+        <div class="field" >
+            <label class="label" for="name">Name: </label>
+            <input class="input" name="name" id="i_name" placeholder="What is the name of this item?" value={{item.name}}>
         </div>
-        <div>
-            <label for="description">Item Description: </label>
-            <input name="description" id="i_name" placeholder="describe this item...">
+        <div class="field" >
+            <label class="label" for="description">Item Description: </label>
+            <input class="input" name="description" id="i_name" placeholder="describe this item..." value={{item.description}}>
         </div>
-        <div>
-            <label for="image_url"> Image URL:  </label>
-            <input name="image_url" id="i_image" placeholder="What is the name of this item?">
-        </div>
-        
-        <div>
-            <label for="category"> Category  </label>
-            <input name="category" id="i_image" placeholder="Select a category...">
+        <div class="field" >
+            <label class="label" for="image_url"> Image URL:  </label>
+            <input class="input" name="image_url" id="i_image" placeholder="The URL of the Image" value={{item.image_url}}>
         </div>
         
-        <div>
-            <label for="price"> Price  </label>
-            <input name="price" id="i_image" placeholder="$$$">
+        <div class="field" >
+            <label class="label" for="category"> Category  </label>
+            <input class="input" name="category" id="i_image" placeholder="Select a category..." value={{item.category}} >
+        </div>
+        
+        <div class="field" >
+            <label class="label" for="price"> Price  </label>
+            <input class="input" name="price" id="i_image" placeholder="$$$" value={{item.price}}>
         </div>
         <div>
-            <button style="width: 7vw; font-size: 1rem;""> Submit </button>
+            <button style="width: 7vw; font-size: 1rem;"> Submit </button>
         </div>
         </form>
         
@@ -42,7 +42,7 @@
 
     </div>
 
-    <div class="edit_container" >
+    <div class="item_container" >
             <div class="tile is-parent" style="width:350px;" >
                 <article class="tile is-child notification is-success">
                     <p class="title">  {{item.name}}  </p>
