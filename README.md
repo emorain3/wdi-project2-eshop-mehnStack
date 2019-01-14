@@ -1,19 +1,7 @@
 # WDI-Project2: eshop-MEHNstack
-
+Simple mock admin view of an online shop. App designed to illustrate CRUD comprehension and MVC project structure.
 Link to app: https://powerful-crag-30567.herokuapp.com/
 
-## User Stories
-- [] As a shop owner I want to select a site location and be taken to the shopping pages for that site
-
-- [X] As a shop owner I want to add new items that I am selling to a shopping page
-
-- [X] As a shop owner I want to be able to view the item's page when I select an item
-
-- [X] As a shop owner I want to add new items that I am selling to a shopping page
-
-- [X] As a shop owner I want to delete an items from a shopping page
-
-- [X] As a shop owner I want to add edit any item on a shopping page
 
 
 
@@ -31,6 +19,19 @@ Figma, lucidchart
 
 ## Resources
 
+
+## User Stories
+- [] As a shop owner I want to select a site location and be taken to the shopping pages for that site
+
+- [X] As a shop owner I want to add new items that I am selling to a shopping page
+
+- [X] As a shop owner I want to be able to view the item's page when I select an item
+
+- [X] As a shop owner I want to add new items that I am selling to a shopping page
+
+- [X] As a shop owner I want to delete an items from a shopping page
+
+- [X] As a shop owner I want to add edit any item on a shopping page
 
 ## Wireframes
 ![wireframe for My Mock Online Shop](/images/wireframe.png)
