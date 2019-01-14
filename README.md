@@ -18,9 +18,16 @@ Link to app: https://powerful-crag-30567.herokuapp.com/
 
 
 ## Technologies Used
+- Node.js, 
+- Express.js, 
+- Mongoose and MongoDB, and 
+- Heroku for deployment
 
-#### Planning: Figma, lucidchart
-#### Project Management: [Trello](https://trello.com/b/4ZWx1n24/eshop-wdi-project2-mehn-development)
+#### Planning: 
+Figma, lucidchart
+
+#### Project Management: 
+[Trello](https://trello.com/b/4ZWx1n24/eshop-wdi-project2-mehn-development)
 
 ## Resources
 
