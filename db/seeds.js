@@ -46,16 +46,16 @@ Item.deleteMany().then(() => {
             Review.create({
                 author: "Justin Beezy",
                 message: "They make my face feel like a marshmallow"
-            }).then( newReview => {
-                item.reviews.push(newReview)
+            }).then( newReview1 => {
+                item.reviews.push(newReview1)
                 // item.save()
-            })
-            Review.create({
-                author: "Kenya",
-                message: "This pillow belongs in the trash."
-            }).then( newReview => {
-                item.reviews.push(newReview)
-                item.save()
+                Review.create({
+                    author: "Kenya",
+                    message: "This pillow belongs in the trash."
+                }).then( newReview2 => {
+                    item.reviews.push(newReview2)
+                    item.save()
+                })
             })
         })
     })

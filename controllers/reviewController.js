@@ -6,7 +6,7 @@ const reviewController = {
     show: (req, res) => {
         let id = req.params.id;
         Item.findById(id).populate('reviews').then( item => {
-            console.log(item)
+            // console.log(item)
             res.render('shop/showItem', {item})
         })
     
