@@ -1,10 +1,6 @@
 const Item = require('../models/Item');
 const Review = require('../models/Review');
 
-const review1 = new Review({
-    author: "Justin Beezy",
-    message: "They make my face feel like a marshmallow"
-})
 
 const review2 = new Review({
     author: "Kenya",
@@ -19,7 +15,7 @@ let initialHomeItems = [
         image_url: "https://image.dhgate.com/0x0/f2/albu/g2/M00/EB/57/rBVaGloeuZGAR5ZJAABAvrBKisw315.jpg",
         category: "home_accessories",
         price: 25,
-        reviews: [review1, review2]
+        reviews: []
     },
     {
         name: "Orange You Special",
@@ -49,6 +45,16 @@ Item.deleteMany().then(() => {
 }).then(() => {
     Item.create(initialHomeItems).then(items => {
         console.log("The following items have been saved: ", items);
+    }).then(items => {
+        Item.findOne({name: 'Chibi Cloud Pillow'}).then( item => {
+            Review.create({
+                author: "Justin Beezy",
+                message: "They make my face feel like a marshmallow"
+            }).then( newReview => {
+                item.reviews.push(newReview)
+                item.save()
+            })
+        })
     })
 })
 

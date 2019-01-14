@@ -14,6 +14,7 @@ router.get('/:id', itemController.edit);
 router.post('/:id', itemController.update);
 router.delete('/:id', itemController.delete);
 
-// COMMENT/ ITEM SHOW PAGE
+// REVIEW/ ITEM SHOW PAGE
 router. get('/item/:id', reviewController.show)
+router. put('/item/:id', reviewController.create)
 module.exports = router

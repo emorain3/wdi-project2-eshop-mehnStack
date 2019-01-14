@@ -29,7 +29,7 @@ const itemController = {
 
     update: (req, res) => {
         let id = req.params.id;
-        console.log("Edited received: " + id);
+        console.log("Editing: " + id);
         Item.findByIdAndUpdate(id, req.body, {new: true}).then(item => res.redirect('/'))
     },
 
