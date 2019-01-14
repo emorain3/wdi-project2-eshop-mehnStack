@@ -2,10 +2,6 @@ const Item = require('../models/Item');
 const Review = require('../models/Review');
 
 
-const review2 = new Review({
-    author: "Kenya",
-    message: "This pillow belongs in the trash."
-})
 
 
 let initialHomeItems = [
@@ -50,6 +46,13 @@ Item.deleteMany().then(() => {
             Review.create({
                 author: "Justin Beezy",
                 message: "They make my face feel like a marshmallow"
+            }).then( newReview => {
+                item.reviews.push(newReview)
+                // item.save()
+            })
+            Review.create({
+                author: "Kenya",
+                message: "This pillow belongs in the trash."
             }).then( newReview => {
                 item.reviews.push(newReview)
                 item.save()
