@@ -6,8 +6,8 @@ Link to app: https://powerful-crag-30567.herokuapp.com/
 
 
 ## Technologies Used
-- Node.js, 
-- Express.js, 
+- Node.js
+- Express.js
 - Mongoose and MongoDB, and 
 - Heroku for deployment
 
